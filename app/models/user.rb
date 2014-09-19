@@ -22,8 +22,8 @@
 class User < ActiveRecord::Base
   extend Enumerize
 
-  enumerize :user_type,  in: Enum::User::TYPE[:options],
-                    predicates: { prefix: true }
+  enumerize :user_type,   in: Enum::User::TYPE[:options],
+                          predicates: { prefix: true }
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -32,16 +32,4 @@ class User < ActiveRecord::Base
 
   validates :subdomain, presence: true
   validates :user_type, presence: true
-
-  def is_admin?
-    self.user_type == "admin"
-  end
-
-  def is_buyer?
-    self.user_type == "buyer"
-  end
-
-  def is_seller?
-    self.user_type == "seller"
-  end
 end
