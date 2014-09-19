@@ -13,12 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require angular
-//= require angular-ui-router
 //= require chosen-jquery
 //
-// AngularJS Controllers
+//
+//
+// AngularJS
 // -----------------------------
+//= require angular
+//= require angular-animate
+//= require angular/angular-ui-router
+//
 //= require angular/app
 //= require angular/main
 //
