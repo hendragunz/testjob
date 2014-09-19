@@ -1,15 +1,5 @@
-
 .page-title
   h1 Home Page
-
-
-.row
-  .col-md-12
-    a ui-sref='test' href='#/home/test'
-      | Test
-
-.row
-  .col-md-12
 
 .row
   .col-md-12
@@ -17,9 +7,9 @@
       - if user_signed_in?
         = link_to 'Logout', destroy_user_session_path, method: :delete
       - else
-        a ui-sref='sign_in' href='#/users/sign_in'
+        a ui-sref='sign_in'
           | Sign In
 
         | &nbsp; or &nbsp;
-        a ui-sref='sign_up' href='#/users/sign_up'
+        a ui-sref='sign_up'
           | Sign Up
