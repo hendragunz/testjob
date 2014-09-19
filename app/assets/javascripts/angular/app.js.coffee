@@ -16,10 +16,6 @@ angular.module('AppRouter', [
       url: '/home/test'
       templateUrl: '/home/test'
     })
-    .state('home', {
-      url: '/'
-      templateUrl: '/'
-    })
     .state('sign_up', {
       url: '/users/sign_up'
       templateUrl: '/users/sign_up'
