@@ -16,12 +16,5 @@ Rails.application.routes.draw do
     resources :users
   end
 
-  resource :home, controller: 'home', only: [] do
-    member do
-      get :test
-    end
-  end
-
   root to: 'home#show'
-  # get "*path" => 'application#index'
 end
