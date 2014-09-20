@@ -3,17 +3,17 @@ Rails.application.routes.draw do
 
   namespace :admin do
     get "/" => "home#show"
-    resources :users
+    root to: 'home#show'
   end
 
   namespace :buyer do
     get "/" => "home#show"
-    resources :users
+    root to: 'home#show'
   end
 
   namespace :seller do
     get "/" => "home#show"
-    resources :users
+    root to: 'home#show'
   end
 
   root to: 'home#show'

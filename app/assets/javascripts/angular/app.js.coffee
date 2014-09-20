@@ -12,10 +12,6 @@ angular.module('AppRouter', [
     .otherwise('/')
 
   $stateProvider
-    .state('test', {
-      url: '/home/test'
-      templateUrl: '/home/test'
-    })
     .state('sign_up', {
       url: '/users/sign_up'
       templateUrl: '/users/sign_up'

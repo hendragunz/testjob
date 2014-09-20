@@ -6,5 +6,5 @@ html ng-app="AppRouter"
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    .container ui-view=''
+    .container ui-view='' ng-init="logged = #{user_signed_in?}; user_type = '#{current_user.try(:user_type)}';"
       = yield
