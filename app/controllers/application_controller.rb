@@ -40,6 +40,8 @@ class ApplicationController < ActionController::Base
     if user_signed_in?
       if subdomain.present? && (subdomain != 'www') && (subdomain != current_user.subdomain)
         return redirect_to root_url(subdomain: current_user.subdomain)
+      elsif subdomain.blank?
+        return redirect_to root_url(subdomain: current_user.subdomain)
       end
     else
       if (subdomain != 'www') && subdomain.present?
