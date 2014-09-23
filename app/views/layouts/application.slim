@@ -1,10 +1,9 @@
 doctype html
-html ng-app="AppRouter"
+html
   head
     title Testjob
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
     = csrf_meta_tags
-  body
-    .container ui-view='' ng-init="logged = #{user_signed_in?}; user_type = '#{current_user.try(:user_type)}';"
-      = yield
+  body ng-app="AppRouter"
+    = yield

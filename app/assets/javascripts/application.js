@@ -22,7 +22,8 @@
 //= require angular
 //= require angular-animate
 //= require angular/angular-ui-router
+//= require angular-rails-templates
 //
-//= require angular/app
-//= require angular/main
-//
+// Templates in app/assets/templates
+//= require_tree .
+//= require_tree ../templates
