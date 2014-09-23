@@ -22,6 +22,7 @@ gem 'enumerize'
 
 # For API
 # -------------------------------------
+gem 'rack-cors'
 gem 'grape'
 gem 'grape-entity'
 
