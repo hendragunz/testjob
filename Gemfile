@@ -20,6 +20,11 @@ gem 'simple_form',    '~> 3.1.0.rc2'
 gem 'chosen-rails'
 gem 'enumerize'
 
+# For API
+# -------------------------------------
+gem 'grape'
+gem 'grape-entity'
+
 group :doc do
   gem 'sdoc',         '~> 0.4.0'
 end
