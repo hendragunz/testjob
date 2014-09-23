@@ -20,11 +20,16 @@ angular.module("AppRouter", [
     url: "/"
     templateUrl: "home.html"
     controller: "HomeCtrl"
+  ).state("signin",
+    # abstract: true
+    url: "/signin"
+    templateUrl: "signin.html"
+  ).state("signup",
+    # abstract: true
+    url: "/signup"
+    templateUrl: "signup.html"
   )
-  # ).state("dashboard",
-  #   abstract: true
-  #   url: "/dashboard"
-  #   templateUrl: "dashboard/layout.html"
+
   # ).state("dashboard.one",
   #   url: ""
   #   templateUrl: "dashboard/one.html"
