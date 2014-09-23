@@ -22,6 +22,7 @@
 
 class User < ActiveRecord::Base
   extend Enumerize
+  include Concerns::User::Authentication
 
   enumerize :user_type,   in: Enum::User::TYPE[:options],
                           predicates: { prefix: true }
