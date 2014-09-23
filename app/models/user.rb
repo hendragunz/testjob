@@ -15,6 +15,7 @@
 #  last_sign_in_ip        :inet
 #  subdomain              :string(255)
 #  user_type              :string(255)
+#  authentication_token   :string(255)
 #  created_at             :datetime
 #  updated_at             :datetime
 #

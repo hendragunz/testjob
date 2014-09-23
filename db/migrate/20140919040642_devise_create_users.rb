@@ -32,6 +32,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
       t.string :subdomain
       t.string :user_type
+      t.string :authentication_token
       t.timestamps
     end
 

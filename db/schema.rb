@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20140919040642) do
     t.inet     "last_sign_in_ip"
     t.string   "subdomain"
     t.string   "user_type"
+    t.string   "authentication_token"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
